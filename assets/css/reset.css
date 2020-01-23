@@ -88,7 +88,9 @@ video {
   padding: 0;
   border: 0;
   font: inherit;
+  box-sizing: border-box;
   vertical-align: baseline;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -131,4 +133,8 @@ q::after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  color: inherit;
 }

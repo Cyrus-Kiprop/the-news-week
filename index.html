@@ -4,7 +4,1510 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
     <title>The News Week</title>
   </head>
-  <body></body>
+  <body>
+    <div
+      class="d-flex justify-content-between  align-items-center align-items-lg-end align-items-xl-end nav-top-container"
+    >
+      <date class="d-none d-lg-block d-xl-block">Mon, Jan 20, 2020</date>
+
+      <div>
+        <a class="brand" href="#">
+          <svg
+            class="svg-brand"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 395.6 60"
+            style="enable-background:new 0 0 395.6 60;"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                class="st0"
+                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <div class="signin-sub-container ">
+          <a id="auth" class="nav-sign-in" href="#">Sign In</a>
+          <a id="auth" class="nav-subscribe" href="#"
+            >Subscribe
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 8 14"
+              style="enable-background:new 0 0 8 14;"
+              xml:space="preserve"
+            >
+              <g id="arrow-right">
+                <defs>
+                  <rect id="SVGID_1_" width="8" height="14"></rect>
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+                </clipPath>
+                <g id="Shape_1" class="st0">
+                  <g>
+                    <polygon
+                      class="st1"
+                      points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"
+                    ></polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="humburger-bar  d-lg-none d-xl-none d-flex align-items-center justify-content-center "
+        >
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-lg-flex d-xl-flex align-items-center justify-content-between  nav-bottom-container position-relative d-sm-none d-none d-md-none d-lg-block d-xl-block"
+    >
+      <a href="#" class="btn btn-lg text-align-center" style="margin-left:16px;"
+        >U.S.</a
+      >
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">World</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Business</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Tech & Science</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Culture</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Newsgeek</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Sports</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Health</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">The Debate</a>
+      <div class="divider"></div>
+      <a href="#" class="btn btn-lg text-align-center">Vantage</a>
+      <div class="divider"></div>
+      <a
+        href="#"
+        class="btn btn-lg text-align-center"
+        style="margin-right:16px ;"
+        >Weather</a
+      >
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <i class="fas fa-search"></i>
+    </div>
+    <!-- start of the  main section -->
+    <main>
+      <section class="container-fluid padding-top pt-3  ">
+        <!-- first row of the main section -->
+        <div class="row no-gutters">
+          <!--  Top stories container and column-1-->
+          <div class="col-12 top-stories-container">
+            <h2 class="block-title">
+              Top Story
+            </h2>
+            <div class="card bg-0 rounded-0 pb-1 border-0">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561806/john-roberts-chief-justice-senate-trial-impeachment.jpg?w=591&amp;h=364&amp;f=78c653fc448378d1e9486d6438365f06"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#">Politics</a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <h1 class="card-title font-weight-bold news-description">
+                  <a href="#"
+                    >Chief Justice John Roberts Admonishes House Managers and
+                    Trump's Counsel</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Congressman Jerry Nadler clashed with White House counsel Pat
+                  Cipollone and President Donald Trump's lawyer Jay Sekulow
+                  during a testy exchange at the impeachment trial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- more stories container -->
+          <div class="col-12 p-0 content ">
+            <h2 class="block-title">
+              Top Story
+            </h2>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+
+            <div class="feature-2">
+              <article class="clearfix ">
+                <div class=" article-image float-left  ">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1561867/ken-starr-trump-trial-senate-impeachment-obstruction.jpg?w=135&amp;h=90&amp;f=368de9baa21f68c1dcb4463323219a23"
+                      alt="Ken Starr Trump trial Senate impeachment obstruction"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <h4>
+                  <a href="#"
+                    >Trump Lawyer Ken Starr: There Is 'No Such Thing as
+                    Obstruction of Congress'</a
+                  >
+                </h4>
+                <div class="summary">
+                  The former independent counsel told conservative activist
+                  Charlie Kirk's podcast that the Democrats should have let the
+                  courts decide.
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- start of Culture and travel section -->
+
+          <div class="col-12 culture-stories-container">
+            <div class="block-title bg-transparent">
+              <a href="/culture">Culture &amp; Travel</a>
+            </div>
+            <div class="card bg-0 rounded-0 pb-1 border-0 bg-transparent">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561651/empty-basic-economy.jpg?w=397&h=265&f=7105e498c5ce49c2a5c33df1b7d264d4"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <!-- some testing features -->
+              <div class="info bg-transparent">
+                <div class=" card-body p-0 title">
+                  <a href="#"
+                    >How to Hack Your Way to a Better Flight in Basic Economy</a
+                  >
+                </div>
+                <div class="section-summary bg-transparent">
+                  Is it possible to get the cheapest fare and still enjoy a long
+                  flight in the not-so-friendly skies of Basic Economy? We talk
+                  to a few airline experts to find out.
+                </div>
+                <div class="tags bg-transparent">
+                  <a href="#" class="active">Travel</a>
+                </div>
+              </div>
+              <!-- end of testing features -->
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0 bg-transparent">
+              <div class=" position-relative bg-transparent">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.jpg?w=397&h=265&l=52&t=43&f=251120a31fc8a424ad32dbcbb96f2b6a"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="info bg-transparent">
+                <div class=" card-body p-0 title bg-transparent">
+                  <a href="#"
+                    >How to Hack Your Way to a Better Flight in Basic Economy</a
+                  >
+                </div>
+                <div class="section-summary bg-transparent">
+                  Is it possible to get the cheapest fare and still enjoy a long
+                  flight in the not-so-friendly skies of Basic Economy? We talk
+                  to a few airline experts to find out.
+                </div>
+                <div class="tags bg-transparent">
+                  <a href="#" class="active">Travel</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0 bg-transparent">
+              <div class=" position-relative bg-transparent">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561651/empty-basic-economy.jpg?w=397&h=265&f=7105e498c5ce49c2a5c33df1b7d264d4"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="info bg-transparent">
+                <div class=" card-body p-0 title bg-transparent">
+                  <a href="#"
+                    >How to Hack Your Way to a Better Flight in Basic Economy</a
+                  >
+                </div>
+                <div class="section-summary bg-transparent">
+                  Is it possible to get the cheapest fare and still enjoy a long
+                  flight in the not-so-friendly skies of Basic Economy? We talk
+                  to a few airline experts to find out.
+                </div>
+                <div class="tags bg-transparent">
+                  <a href="#" class="active">Travel</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0 bg-transparent">
+              <div class=" position-relative bg-transparent">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1558479/falconry-malta.jpg?w=397&h=265&f=f5e1823e310eb31eb3045c0868f53134"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="info bg-transparent">
+                <div class=" card-body border-0 p-0 title bg-transparent">
+                  <a href="#"
+                    >How to Hack Your Way to a Better Flight in Basic Economy</a
+                  >
+                </div>
+                <div class="section-summary bg-transparent">
+                  Is it possible to get the cheapest fare and still enjoy a long
+                  flight in the not-so-friendly skies of Basic Economy? We talk
+                  to a few airline experts to find out.
+                </div>
+                <div class="tags bg-transparent">
+                  <a href="#" class="active">Travel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of culture and stories -->
+
+          <!-- start of featured stories section -->
+          <div class="col-12 p-0 content featured-stories-container">
+            <h2 class="block-title">
+              Featured stories
+            </h2>
+            <div class="card bg-0 rounded-0 pb-1 border-0">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561737/zions-debut.jpg?w=397&h=265&q=90&f=e9d1df97fef87c292caae97a4934f497"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#">News</a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Chief Justice John Roberts Admonishes House Managers and
+                    Trump's Counsel</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Congressman Jerry Nadler clashed with White House counsel Pat
+                  Cipollone and President Donald Trump's lawyer Jay Sekulow
+                  during a testy exchange at the impeachment trial.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561749/per-qa-charlesfried-01-108736674-web.jpg?w=397&h=265&l=57&t=54&q=90&f=8a8341a5ca7f484dce5b378eaf87fde2"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#">News</a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Chief Justice John Roberts Admonishes House Managers and
+                    Trump's Counsel</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Congressman Jerry Nadler clashed with White House counsel Pat
+                  Cipollone and President Donald Trump's lawyer Jay Sekulow
+                  during a testy exchange at the impeachment trial.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561696/idlib.jpg?w=397&h=265&q=90&f=91633dc6c092e4809b9173a51ddc06cb"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#">News</a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Chief Justice John Roberts Admonishes House Managers and
+                    Trump's Counsel</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Congressman Jerry Nadler clashed with White House counsel Pat
+                  Cipollone and President Donald Trump's lawyer Jay Sekulow
+                  during a testy exchange at the impeachment trial.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 pb-1 border-0">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1561711/jim-jordan-trump-impeachment-team.jpg?w=397&h=265&q=90&f=7878dbd17be2f585f3a47abb2088769e"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#">News</a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >What to Know About the Republicans Tapped for Trump's
+                    Impeachment Team</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  "The President looks forward to their continued participation
+                  and is confident that the Members will help expeditiously end
+                  this brazen political vendetta on behalf of the American
+                  people," the White House announced.
+                </p>
+              </div>
+            </div>
+
+            <!-- with some borders  -->
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#">Saudi Arabia Accelerates Ahead</a>
+                </h1>
+                <p class="card-title summary">
+                  With interest from international investors up 70 percent in
+                  2019, Saudi Arabia is becoming an investment powerhouse—a
+                  transformation supported by its flourishing financial services
+                  industry and rapidly expanding private sector. Read more.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1551972/adelphi-university.jpg?w=343&h=229&f=724992f1ac3b00542643db09f18555b8"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#">Nurses - The Real Medical Heroes of 2020</a>
+                </h1>
+                <p class="card-title summary">
+                  We’re used to doctors bustling in and out when in hospital,
+                  but it’s the reassuring presence and professionalism of the
+                  nursing staff that we rely on. What sets the best ones apart?
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1544369/ball-state-university.png?w=343&h=229&f=3134c3a8c8da88fe826f60d278b8a8bc"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#">What Can a Career in Architecture Do For You?</a>
+                </h1>
+                <p class="card-title summary">
+                  Architects do much more than plan and design houses,
+                  factories, office buildings, and other structures. You might
+                  be surprised how diverse the career can be. Find out more.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1551231/ccmf-v2.png?w=343&h=229&l=58&t=27&f=940b1568f5188be79a30edcda9dd9e7c"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >If You or a Loved One Has Been Injured, Who Can Champion
+                    Your Cause?</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Logic dictates that when you need a good personal injury
+                  attorney, you’re going to be in a stressful, vulnerable and
+                  overwhelming situation. It is vital that you speak to an
+                  attorney who can ensure that you are not taken advantage of.
+                  We look at some of the leaders in the field.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1560475/weather-channel.png?w=343&h=229&f=b57fd57ec964b6cc944d668218beaf3e"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">Weather</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#">Is It Going To Rain?</a>
+                </h1>
+                <p class="card-title summary">
+                  Newsweek is launching a new Weather section in partnership
+                  with The Weather Channel
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1558006/peabody-college-education-human-development-vanderbilt.jpg?w=343&h=229&f=76579fd6c5ebc179660b55cd13ac4290"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Embark on a Career in Teaching With a Leading School</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Teachers are more in demand than ever, and the rewards for a
+                  career as an educator are numerous and generous. Find out how
+                  to get involved.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End of  featured stories section -->
+
+          <!-- start of the opinion section -->
+
+          <!-- end of the opinion section -->
+
+          <!-- continuation of sponsored highlights -->
+          <div class="col-12 p-0 content featured-stories-container">
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1556495/drexel-university-thomas-r-kline-school-law.png?w=343&h=229&f=445800b682dc03a4e0df8b3c633705ef"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Have You Thought About A Career In Law? If So, Where Should
+                    You Get Qualified?</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  The rewards for a career in the legal profession are many and
+                  varied, and demand for lawyers is high. So which schools
+                  produce the best lawyers?
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1561307/overview-report-company-web.jpg?w=343&h=229&f=89555d48e68fb951ca67eb4d9f8a2e16"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Embark on a Career in Teaching With a Leading School</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Teachers are more in demand than ever, and the rewards for a
+                  career as an educator are numerous and generous. Find out how
+                  to get involved.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1561307/overview-report-company-web.jpg?w=343&h=229&f=89555d48e68fb951ca67eb4d9f8a2e16"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Embark on a Career in Teaching With a Leading School</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Teachers are more in demand than ever, and the rewards for a
+                  career as an educator are numerous and generous. Find out how
+                  to get involved.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1551988/department-journalism-klein-college-media-communication-temple-university.png?w=343&h=229&f=76ea6f294276a4b95755a1cbe3808b73"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Good Journalists Are More Important Than Ever in 2020</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  The world desperately needs sharp, incisive and capable
+                  journalists to cut through the noise with measured and nuanced
+                  takes on today's pressing issues. For these looking to find
+                  their voices, an education at a leading journalism school is
+                  invaluable.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1547935/canadian-college-italy-v2.jpg?w=343&h=229&l=0&t=0&f=794b9dc860eab72a611ab3422a24fc8c"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >Think All International Schools are the Same? Think
+                    Again.</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  International schools are not created equal and each one
+                  possesses a unique blend of qualities and educational
+                  specializations. Find out which one is best for your child.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0 mb-3 ">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1550618/americas-most-responsible-companies-2020.jpg?w=343&h=229&f=228a31483952835462a9e24494fc24f7"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary"> Sponsored Insights</a>
+                </div>
+              </div>
+              <div class="card-body ">
+                <h1
+                  class="card-title font-weight-bold news-description remove-decoration"
+                >
+                  <a href="#"
+                    >America's Most Socially Responsible Companies 2020</a
+                  >
+                </h1>
+                <p class="card-title summary">
+                  Newsweek partnered with Statista Inc. to spotlight 300
+                  companies that stand up as good citizens and good neighbors.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-0 rounded-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1560513/january-24-31-2020-cover.jpg?w=360&h=480&q=90&f=934b1f46e8cfb6967583ca1d5fb3ff5a"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+                <div class="category position-absolute">
+                  <a href="#" class="text-primary">January 31 ISSUE</a>
+                </div>
+              </div>
+              <!-- <div class="card-body p-1> -->
+              <a href="#" class="lk-gray text-center d-inline-block p-2 "
+                >See All Features</a
+              >
+              <!-- </div> -->
+            </div>
+          </div>
+          <!-- end of sponsored hightlights -->
+
+          <!-- start of the magazine section -->
+          <div class="col-12 p-0 content magazine-container">
+            <div class="d-flex justify-content-center in-the-magazine ">
+              <span class="icon-n  align-items-center "></span>
+              <p class="align-self-center text-uppercase font-weight-bold">
+                IN THE MAGAZINE
+              </p>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559646/fe-nigeria-01-523787136-banner.jpg?w=466&h=311&l=50&t=43&q=90&f=e36653b42dd59923b263ccf8ac9da38e"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">Cover</span>
+                <span class="cat"><a href="#">World</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >Black China: Africa's First Superpower Is Coming Sooner Than
+                  You Think<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559668/fe-iran-01-1192553955-banner.jpg?w=466&h=311&q=90&f=7ccdeda6986951e173e4edac853188f4"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">Features</span>
+                <span class="cat"><a href="#">World</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >The Iran Crisis Comes With Serious Risks for America's
+                  Economy<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1558983/wirecutter-credit-card-debt.jpg?w=466&h=311&q=90&f=a3bc13ecd27eefb91197a7b7e7d4b8a7"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">Periscope</span>
+                <span class="cat"><a href="#">Business</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >Got Holiday Debt? Pay Off Your Credit Cards Quickly with
+                  These 5 Tips<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559784/per-meghanmarklemutiny-1198091143-banner.jpg?w=466&h=311&l=51&t=35&q=90&f=9b194e6abc215cc63385b187c121bda2"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">Periscope</span>
+                <span class="cat"><a href="#">Culture</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >Meghan Markle Being a Black Woman in Royal Family Was Never
+                  Going to Work<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559828/cul-chanelqanda-56226855-banner.jpg?w=466&h=311&l=47&t=44&q=90&f=306a66391c7914cdddd595b7684108c0"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">Downtown</span>
+                <span class="cat"><a href="#">Culture</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >Historian Anne de Courcy on What We Can Learn From Coco
+                  ChanelThink<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.jpg?w=466&h=311&l=52&t=43&q=90&f=7304393158fe5076eb5899aac7970e41"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <div class="category m-0 p-0 text-uppercase">
+                <span class="mag-cat">DownTime</span>
+                <span class="cat"><a href="#">Culture</a></span>
+              </div>
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link"
+                  >Women Changemakers of the Last Century<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-3">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1559861/night-terror.jpg?w=480&h=320&l=50&t=54&q=90&f=c079c550832cafe96766d3d96494d8ac"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+              </div>
+
+              <h5 class="pt-2 pb-2">
+                <a href="#" class="article-link text-up text-uppercase">
+                  Night terror<span class="overlay article-overlay"></span
+                ></a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- End of the magazine section -->
+
+          <!-- start of featured slideshows -->
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 p-0 content futured-slideshows-container">
+            <div
+              class="d-flex justify-content-center  futured-after in-the-magazine "
+            >
+              <span
+                class="icon-n position-relative  align-items-center "
+              ></span>
+              <p class="align-self-center text-uppercase font-weight-bold">
+                featured slideshows
+              </p>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-4">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">11</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Relive the 'Star Wars' Saga at These Filming Locations<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-4">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.jpg?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">11</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Relive the 'Star Wars' Saga at These Filming Locations<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-4">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1543106/2018-cup-collection.jpg?w=397&h=265&f=e00260b486695409ac860cb50949464c"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">55</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Relive the 'Star Wars' Saga at These Filming Locations<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-4">
+              <div class=" position-relative">
+                <img
+                  class="https://d.newsweek.com/en/full/1542741/holiday-cups-starbucks.jpg?w=397&h=265&f=cc7b0a58452583ca846051991fe522ce"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">17</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Relive the 'Star Wars' Saga at These Filming Locations<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0  mb-4">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1539646/first-wives-club-pumpkin.jpg?w=397&h=265&f=4a9ecc91f6b122866651645aed974cf6"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">30</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Relive the 'Star Wars' Saga at These Filming Locations<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+
+            <div class="card bg-0 rounded-0 border-0   mb-4">
+              <div class=" position-relative">
+                <img
+                  class="img-fluid news-insights"
+                  src="https://d.newsweek.com/en/full/1534277/nycc-2019-best-cosplay-augustus-st-cloud.jpg?w=397&h=265&l=22&t=27&f=db0895c475d903e09b054be0c3cfb8c5"
+                  alt="John Roberts Chief Justice Senate trial impeachment"
+                />
+
+                <a href="#" class="count-link position-absolute">40</a>
+              </div>
+
+              <h5 class="pt-2 pb-2 ">
+                <a
+                  href="#"
+                  class="article-link text-up header-5 font-weight-bold"
+                >
+                  Our Cosplay Favorites from NYCC 2019<span
+                    class="overlay article-overlay"
+                  ></span
+                ></a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- End of featured slideshows -->
+
+          <!-- start of the subscribe-block -->
+          <div class="col-12 subscribe-container  position-relative pt-5">
+            <div class="subscribe-item">
+              <div class="block-title red">Subscribe</div>
+              <div class="subscribe-block d-flex justify-content-center">
+                <div class=" subscribe-image position-relative">
+                  <div class="mag-thumb prev">
+                    <img
+                      src="https://d.newsweek.com/en/full/1556038/january-03-17-2020-cover.jpg?w=170&amp;q=95&amp;f=5ee630dad7d5beb00d233b14fbde0b1a"
+                    />
+                  </div>
+
+                  <div class="mag-thumb current">
+                    <img
+                      src="https://d.newsweek.com/en/full/1560513/january-24-31-2020-cover.jpg?w=170&amp;q=95&amp;f=e37a347d93374c1cd0542ffe614ab3b4"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class=" subscribe-info mb-5 text-center ">
+                <h3 class="font-weight-bold mb-3">
+                  In-depth Stories You Don't See Elsewhere About Topics You Want
+                  to Read!
+                </h3>
+                <p class="mb-4 ">
+                  All Access + Weekly Delivery.<br />Choose A Membership That's
+                  Perfect for You!
+                </p>
+                <a
+                  class="btn btn-default lk-cont p-2 text-white rounded-0"
+                  href="#"
+                  target="_blank"
+                  ><span class="lk text-uppercase font-weight-bold"
+                    >Subscribe</span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div class="singup-item ">
+              <div class="block-title red ">newsletter</div>
+              <div class="pb-3">
+                <div class="fn-image img-fluid"></div>
+              </div>
+
+              <div class=" subscribe-info mb-5 text-center ">
+                <h3 class="font-weight-bold mb-3">
+                  The Starting 5
+                </h3>
+                <p class="mb-4 ">
+                  Take back your inbox. Sign up for our newsletter and start
+                  making sense of the world around you.
+                </p>
+                <a
+                  class="btn btn-default lk-cont p-2 text-white rounded-0"
+                  href="#"
+                  target="_blank"
+                  ><span class="lk text-uppercase  font-weight-bold"
+                    >sign up</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end of the subscribe section -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid col-12 ">
+      <div class="">
+        <div class="">
+          <a class="brand" href="#">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              style="enable-background:new 0 0 395.6 60;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <p class="copyright">© 2020 Newsweek</p>
+        </div>
+        <ul class="social d-flex">
+          <li>
+            <a class="icon-facebook" href="#" target="_blank">
+              <i class="fab fa-facebook-square fa-lg"></i
+            ></a>
+          </li>
+          <li>
+            <a class="icon-twitter " href="#" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="icon-instagram "
+              href="#"
+              rel="nofollow"
+              target="_blank"
+              >
+              <i class="fab fa-instagram fa-lg"></i
+                >
+             </a>
+          </li>
+          <li>
+            <a
+              class="genericon genericon-tumblr "
+              href="#"
+              rel="nofollow"
+              target="_blank"
+              >
+              <i class="fab fa-tumblr fa-lg"></i>
+              
+             </a>
+          </li>
+          <li>
+            <a
+              class="genericon genericon-linkedin"
+              href="#"
+              rel="nofollow"
+              target="_blank"
+            >
+            <i class="fab fa-linkedin-in fa-lg"></i
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-links d-flex flex-column">
+        <div class="footer-links-edition d-flex  align-items-center">
+          <label
+            ><strong>Editions:</strong></label
+          >
+          <ul class="menu d-flex ">
+            <li class="first leaf">
+              <a href="#">U.S. Edition</a>
+            </li>
+            <li class="leaf">
+              <a href="#">日本</a>
+            </li>
+            <li class="leaf">
+              <a href="#">Pakistan</a>
+            </li>
+            <li class="leaf"><a href="#">Polska</a></li>
+            <li class="leaf"><a href="#">România</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-menu">
+          <ul class="menu d-flex justify-content-start">
+            <li class="first leaf"><a href="#">About Us</a></li>
+            <li class="leaf"><a href="#">Corrections</a></li>
+            <li class="leaf"><a href="#">Contact Us</a></li>
+            <li class="leaf">
+              <a href="#">Editorial Guidelines</a>
+            </li>
+            <li class="leaf"><a href="#">Advertise</a></li>
+            <li class="leaf"><a href="#">Copyright</a></li>
+            <li class="leaf"></li>
+              <a href="#">Terms &amp; Conditions</a>
+            </li>
+            <li class="leaf"><a href="#">Privacy Policy</a></li>
+            <li class="leaf"><a href="#">Cookie Policy</a></li>
+            <li class="leaf"><a href="#">Terms of Sale</a></li>
+            <li class="leaf"><a href="#">Archive</a></li>
+            <li class="last leaf">
+              <a href="#">Announcements</a>
+            </li>
+            <li>
+              <a
+                href="javascript:Didomi.preferences.show()"
+                class="change-consent"
+                >Consent preferences</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </body>
 </html>
