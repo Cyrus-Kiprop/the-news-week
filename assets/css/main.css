@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
 body {
   background-color: #f4f5f6;
   color: #333;
@@ -10,7 +10,6 @@ body {
   line-height: 18px;
   font-family: "Varela Round", sans-serif;
   overflow-x: hidden;
-  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -47,17 +46,15 @@ body {
   padding-left: 15px;
 }
 
-.nav-top-container date {
+.nav-top-container .nav-date {
   margin: 0 0 0 25px;
   font: 16px/34px "Roboto Condensed", sans-serif;
   color: white;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .humburger-bar {
   width: 50px;
   height: 50px;
-  /* background-color: blue; */
 }
 
 .humburger-bar i {
@@ -135,6 +132,7 @@ body {
   top: 0;
   right: 102px;
 }
+
 .nav-bottom-container i {
   color: rgba(0, 0, 0, 0.55);
   position: absolute;
@@ -148,19 +146,19 @@ body {
     height: 60px;
     margin: 20px 0 0 0;
   }
+
   .nav-bottom-container {
     padding-right: 160px;
     height: 56px;
   }
+
   .nav-top-container {
     height: auto;
     height: 95px;
     padding-bottom: 13px;
   }
 }
-/* Start of the main section */
 
-/* FEATURED STORIES SECTION STYLING */
 .block-title {
   color: rgba(3, 3, 3, 0.4);
   text-transform: uppercase;
@@ -191,6 +189,12 @@ h1 h2 h3 h3 h4 h5 h6 {
   color: black;
 }
 
+a.news-headline:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+  color: black;
+}
+
 .sponsor-color {
   color: #3581f4;
 }
@@ -202,7 +206,6 @@ h1 h2 h3 h3 h4 h5 h6 {
 
 .culture-container {
   background-color: #f4f5f7;
-  /* margin-bottom: 20px; */
   margin: 0 15px 20px;
 }
 
@@ -233,8 +236,6 @@ h1 h2 h3 h3 h4 h5 h6 {
   font-size: 17px;
   line-height: 20px;
 }
-
-/* opinion section styling */
 
 .byline {
   font-size: 14px;
@@ -273,8 +274,6 @@ h1 h2 h3 h3 h4 h5 h6 {
   }
 }
 
-/* magazine  */
-
 .mag-title {
   font: bold 19px/19px "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
@@ -287,7 +286,8 @@ h1 h2 h3 h3 h4 h5 h6 {
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   margin-right: 10px;
   border-bottom: 1px solid #d9d9d9;
@@ -333,7 +333,8 @@ h1 h2 h3 h3 h4 h5 h6 {
   width: 8px;
   height: 14px;
   margin-left: 10px;
-  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg)
+  background:
+    url(https://g.newsweek.com/www/images/icon-arrow-right.svg)
     center/contain no-repeat;
 }
 
@@ -358,7 +359,8 @@ h1 h2 h3 h3 h4 h5 h6 {
 }
 
 .news-week .icon-n {
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
 }
 
@@ -382,7 +384,6 @@ h1 h2 h3 h3 h4 h5 h6 {
   color: #c7c7c7;
   font-size: 16px;
   line-height: 24px;
-  color: #c6c6c6;
   margin-bottom: 10px;
 }
 
@@ -404,17 +405,13 @@ h1 h2 h3 h3 h4 h5 h6 {
   width: 100%;
   height: 100%;
 }
+
 .group-vid {
   border-top: 1px solid #ddd;
 }
 
 .figure-container {
-  /* width: 500px; */
-  /* width: 41.66666667%; */
   flex: 2 1 auto;
-}
-.vid-back::first-child {
-  background-image: url("https://d.newsweek.com/en/full/1555350/newsweek-conversations-leslie-grossman.jpg?w=173&h=104&f=b810dcbe860058739bb5ae4114710a95");
 }
 
 .vid-back {
@@ -426,39 +423,19 @@ h1 h2 h3 h3 h4 h5 h6 {
   background-repeat: no-repeat;
 }
 
-.small-video
-
-/* .genericon {
-  text-align: center;
-  display: block;
-  font-family: "Genericons";
-  cursor: pointer;
-  bottom: 0;
-  left: 0;
-  /* background-color: white; */
-/* z-index: 400; */
-
-.genericon-play:after {
+.small-video .genericon-play::after {
   content: "";
   display: table;
   position: absolute;
   height: 30px;
-  /* bottom: 0; */
   background-color: blue;
-  /* right: 0; */
-  height: 1px;
   bottom: 0;
   border: 20px solid white;
 }
 
 .video-desc {
-  /* .feadisplay: flex;tured-video h4 { */
-  /* font-size: 18px;
-  line-height: 20px;
-  margin-bottom: 13px; */
   color: white;
   flex: 3;
-  /* } */
 }
 
 @media (min-width: 768px) {
@@ -467,6 +444,7 @@ h1 h2 h3 h3 h4 h5 h6 {
     line-height: 32px;
     margin-bottom: 4px;
   }
+
   .genericon-play {
     font-size: 45px;
     width: 53px;
@@ -493,8 +471,6 @@ h1 h2 h3 h3 h4 h5 h6 {
   }
 }
 
-/* featured slideshows */
-
 .featured-shows .icon-n::after {
   border-bottom: 3px solid red;
   border-right: 3px solid red;
@@ -519,7 +495,8 @@ h1 h2 h3 h3 h4 h5 h6 {
   line-height: 58px;
   text-indent: 5px;
   text-align: center;
-  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
+  background:
+    url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
     0 0 / contain no-repeat;
   color: #e9212e;
 }
@@ -555,7 +532,8 @@ h1 h2 h3 h3 h4 h5 h6 {
   width: 8px;
   height: 14px;
   margin-left: 10px;
-  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg)
+  background:
+    url(https://g.newsweek.com/www/images/icon-arrow-right.svg)
     center/contain no-repeat;
 }
 
@@ -585,13 +563,9 @@ h1 h2 h3 h3 h4 h5 h6 {
 }
 
 .fn-2-image {
-  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
+  background:
+    url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
     center center / cover no-repeat;
-  /* height: 100%; */
-}
-
-.f1-2-info {
-  /* height: 100%; */
 }
 
 @media screen and (max-width: 768px) {
@@ -608,13 +582,7 @@ h1 h2 h3 h3 h4 h5 h6 {
     height: 301px;
   }
 }
-/*
 
-
-
-
-
-/* footer section */
 .page-footer {
   border-top: 2px solid #f4f5f6;
   background-color: white;
@@ -660,22 +628,21 @@ h1 h2 h3 h3 h4 h5 h6 {
   margin-bottom: 12px;
 }
 
-.page-footer .social li:first-child {
-  margin-left: 0;
+.page-footer .social li {
+  margin-left: 10px;
 }
 
-.page-footer .social .genericon {
-  line-height: 24px;
+.page-footer .social li:first-child {
+  margin-left: 0;
 }
 
 .genericon {
   font-size: 26px;
   text-align: center;
   display: block;
-  font-family: "Genericons";
   cursor: pointer;
 }
 
-.page-footer .social li {
-  margin-left: 10px;
+.page-footer .social .genericon {
+  line-height: 24px;
 }
