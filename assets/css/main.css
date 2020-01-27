@@ -621,3 +621,61 @@ h1 h2 h3 h3 h4 h5 h6 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.page-footer .brand svg {
+  display: block;
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  fill: #f72210;
+}
+
+.page-footer .copyright {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.page-footer .footer-links {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.page-footer .footer-links li {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.page-footer .social {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.page-footer .social li:first-child {
+  margin-left: 0;
+}
+
+.page-footer .social .genericon {
+  line-height: 24px;
+}
+
+.genericon {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  font-family: "Genericons";
+  cursor: pointer;
+}
+
+.page-footer .social li {
+  margin-left: 10px;
+}
