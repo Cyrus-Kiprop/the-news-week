@@ -1,0 +1,24 @@
+{
+  "name": "the-news-week",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyrus-Kiprop/the-news-week.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyrus-Kiprop/the-news-week/issues"
+  },
+  "homepage": "https://github.com/Cyrus-Kiprop/the-news-week#readme",
+  "dependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
